@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Joshna Boutique</title>
+  <link rel="icon" href="https://th.bing.com/th/id/OIP.IRbjVfGxwDBJjOyCB14OQwHaHa?rs=1&pid=ImgDetMain">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8eea2;
+      margin: 0;
+      padding: 20px;
+      background-image: url('https://static.vecteezy.com/system/resources/previews/004/299/830/original/shopping-online-on-phone-with-podium-paper-art-modern-pink-background-gifts-box-illustration-free-vector.jpg');
+    }
+
+    h1 {
+      text-align: center;
+      color: #6a1b9a;
+      margin-bottom: 30px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 90px;
+      max-width: 1300px;  
+      margin: 0 auto;
+    }
+
+    .product-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #cafbdd;
+;
+      padding: 30px;
+      width: 300PX;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .product-container img {
+      border: 7px solid rgb(27, 5, 39);
+      width: 200px;
+      height: 200px;
+      margin-bottom: 15px;
+    }
+
+    .product-details {
+      text-align: center;
+    }
+
+    .product-details h3 {
+      margin-top: 0;
+      color: #020005;
+    }
+
+    .product-details p {
+      margin: 10px 0;
+      color: #333;
+    }
+
+    .buy-button {
+      background-color: #8e24aa;
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .buy-button:hover {
+      background-color: #6a1b9a;
+    }
+
+    /* Fade-in animation on load */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product-container {
+  animation: fadeInUp 1s ease forwards;
+  transition: transform 0.3s ease;
+}
+
+/* Zoom effect on hover */
+.product-container:hover {
+  transform: scale(1.05);
+}
+
+/* Rotate image slightly on hover */
+.product-container img:hover {
+  transform: rotate(3deg) scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* BUY button glow effect */
+.buy-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.buy-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-20deg);
+  transition: left 0.5s ease;
+}
+
+.buy-button:hover::after {
+  left: 125%;
+}
+
+  </style>
+</head>
+<body>
+
+  <h1 id="h13">FOOTWEARS</h1>
+
+  <div class="grid-container">
+    <div class="product-container">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.7YkVylppxhpxNITntGzsYwHaHa?pid=Api&P=0&h=180">
+      <div class="product-details">
+        <h3><strong>KITTEN</strong></h3>
+        <h3><strong>Rs.1,300</strong></h3><br>
+        <a href="PaymentFoot2.3.html" onclick="showForm()" class="buy-button">BUY</a>
+      </div>
+    </div>
+
+    <div class="product-container">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.oHemjt3FdHv2avsbkXwBBwHaHa?pid=Api&P=0&h=180">
+      <div class="product-details">
+    <h3><strong>STILETOS</strong></h3>
+        <h3><strong>Rs.1,500</strong></h3><br>
+        <a href="PaymentFoot2.3.html" onclick="showForm()" class="buy-button">BUY</a>
+      </div>
+    </div>
+
+    <div class="product-container">
+      <img src="https://cdn2.stylecraze.com/wp-content/uploads/2018/01/Cut-out-heels.jpg">
+      <div class="product-details">
+    <h3><strong>CUT-OUT</strong></h3>
+        <h3><strong>Rs.2000</strong></h3><br>
+        <a href="PaymentFoot2.3.html" onclick="showForm()" class="buy-button">BUY</a>
+      </div>
+    </div>
+
+    <div class="product-container">
+      <img src="https://i.pinimg.com/originals/39/ab/36/39ab36ae98cd2cdf745745faa7d18fe1.jpg">
+      <div class="product-details">
+     <h3><strong>PEEP-TOES</strong></h3>
+        <h3><strong>Rs.999</strong></h3><br>
+        <a href="PaymentFoot2.3.html" onclick="showForm()" class="buy-button">BUY</a>
+      </div>
+    </div>
+
+    <div class="product-container">
+      <img src="https://www.puralopez.com/uploads/images/products/sandalias-beige-tacon-pulsera-pura-lopez-martina1.jpg">
+      <div class="product-details">
+         <h3><strong>ANKLE-STRAP</strong></h3>
+        <h3><strong>Rs.1,400</strong></h3><br>
+        <a href="PaymentFoot2.3.html" onclick="showForm()" class="buy-button">BUY</a>
+      </div>
+    </div>
+
+    <div class="product-container">
+      <img src="https://i.pinimg.com/originals/07/a4/69/07a4691f1f2673cf4c9c8a6b62d472e7.jpg">
+      <div class="product-details">
+      <h3><strong>HIGH-HEELS</strong></h3>
+        <h3><strong>Rs.2,500</strong></h3><br>
+        <a href="PaymentFoot2.3.html" onclick="showForm()" class="buy-button">BUY</a>
+      </div>
+    </div>  
+     </div>
+
+</body>
+</html>
+
