@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Joshna Boutique</title>
+  <link rel="icon" href="https://th.bing.com/th/id/OIP.IRbjVfGxwDBJjOyCB14OQwHaHa?rs=1&pid=ImgDetMain">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8eea2;
+      margin: 0;
+      padding: 20px;
+      background-image: url('https://static.vecteezy.com/system/resources/previews/004/299/830/original/shopping-online-on-phone-with-podium-paper-art-modern-pink-background-gifts-box-illustration-free-vector.jpg');
+    }
+
+    h1 {
+      text-align: center;
+      color: #6a1b9a;
+      margin-bottom: 30px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 90px;
+      max-width: 1300px;  
+      margin: 0 auto;
+    }
+
+    .product-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #cafbdd;
+;
+      padding: 30px;
+      width: 300PX;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .product-container img {
+      border: 7px solid rgb(27, 5, 39);
+      width: 200px;
+      height: 200px;
+      margin-bottom: 15px;
+    }
+
+    .product-details {
+      text-align: center;
+    }
+
+    .product-details h3 {
+      margin-top: 0;
+      color: #020005;
+    }
+
+    .product-details p {
+      margin: 10px 0;
+      color: #333;
+    }
+
+    .buy-button {
+      background-color: #8e24aa;
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .buy-button:hover {
+      background-color: #6a1b9a;
+    }
+
+    /* Fade-in animation on load */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product-container {
+  animation: fadeInUp 1s ease forwards;
+  transition: transform 0.3s ease;
+}
+
+/* Zoom effect on hover */
+.product-container:hover {
+  transform: scale(1.05);
+}
+
+/* Rotate image slightly on hover */
+.product-container img:hover {
+  transform: rotate(3deg) scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* BUY button glow effect */
+.buy-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.buy-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-20deg);
+  transition: left 0.5s ease;
+}
+
+.buy-button:hover::after {
+  left: 125%;
+}
+  
+  </style>
+</head>
+<body>
+
+  <h1 id="h13">FOOTWEARS</h1>
+
+  <div class="grid-container">
+    <div class="product-container">
+      <img src="https://i5.walmartimages.com/seo/LANREMON-Women-Wedge-Sandals-Elastic-Ankle-Strap-Sandals-Open-Toe-Summer-Platform-Beach-Shoes-Flower-Rhinestone-Sandal-Black-6_5774a509-78e7-4493-99f2-baf4bd3967f0.b7449902d94f99de12bd987dc2a8b674.jpeg">
+      <div class="product-details">
+        <h3><strong>WEDGE</strong></h3>
+        <h3><strong>Rs.500</strong></h3><br>
+        <a href="PaymentFoot2.1.html" onclick="showForm()" class="buy-button">BUY</a>
+      </div>
+    </div>
+
+    <div class="product-container">
+      <img src="https://cdn.shopify.com/s/files/1/1931/0659/products/SHSAH094-WH-6_2048x.jpg">
+      <div class="product-details">
+    <h3><strong>STRAPPY</strong></h3>
+        <h3><strong>Rs.800</strong></h3><br>
+        <a href="PaymentFoot2.1.html" onclick="showForm()" class="buy-button">BUY</a>
+      </div>
+    </div>
+
+    <div class="product-container">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.QL6Uo2ZEhdeCNha6dllRpQHaHa?pid=Api&P=0&h=180">
+      <div class="product-details">
+    <h3><strong>GLADIATOR</strong></h3>
+        <h3><strong>Rs.1000</strong></h3><br>
+        <a href="PaymentFoot2.1.html" onclick="showForm()" class="buy-button">BUY</a>
+      </div>
+    </div>
+
+    <div class="product-container">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/71btnd19fhL._UL1500_.jpg">
+      <div class="product-details">
+     <h3><strong>THONG</strong></h3>
+        <h3><strong>Rs.900</strong></h3><br>
+        <a href="PaymentFoot2.1.html" onclick="showForm()" class="buy-button">BUY</a>
+      </div>
+    </div>
+
+    <div class="product-container">
+      <img src="https://i5.walmartimages.com/seo/Women-s-Outdoor-Beach-Platform-Shoes-Casual-Wedge-Sandals-with-Closed-Toe-Cut-out-Ankle-Strap_bcc37684-d9d3-4dd8-8c62-7113419ba9bb.f258019392a345d6d46d9ce8301fa88a.jpeg">
+      <div class="product-details">
+         <h3><strong>PLATFORM</strong></h3>
+        <h3><strong>Rs.400</strong></h3><br>
+        <a href="PaymentFoot2.1.html" onclick="showForm()" class="buy-button">BUY</a>
+      </div>
+    </div>
+
+    <div class="product-container">
+      <img src="https://m.media-amazon.com/images/I/61C1zhU0f3L._AC_SR920,736_.jpg">
+      <div class="product-details">
+      <h3><strong>TOE-LOOP</strong></h3>
+        <h3><strong>Rs.350</strong></h3><br>
+        <a href="PaymentFoot2.1.html" onclick="showForm()" class="buy-button">BUY</a>
+      </div>
+    </div>  
+     </div>
+
+</body>
+</html>
+
