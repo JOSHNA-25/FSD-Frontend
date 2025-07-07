@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Joshna Boutique</title>
+  <link rel="icon" href="https://th.bing.com/th/id/OIP.IRbjVfGxwDBJjOyCB14OQwHaHa?rs=1&pid=ImgDetMain">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8eea2;
+      margin: 0;
+      padding: 20px;
+      }
+
+    h1 {
+      text-align: center;
+      color: #6a1b9a;
+      margin-bottom: 30px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 90px;
+      max-width: 1300px;  
+      margin: 0 auto;
+    }
+
+    .product-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #cafbdd;
+;
+      padding: 30px;
+      width: 300PX;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .product-container img {
+      border: 7px solid rgb(27, 5, 39);
+      width: 200px;
+      height: 200px;
+      margin-bottom: 15px;
+    }
+
+    .product-details {
+      text-align: center;
+    }
+
+    .product-details h3 {
+      margin-top: 0;
+      color: #020005;
+    }
+
+    .product-details p {
+      margin: 10px 0;
+      color: #333;
+    }
+
+    .buy-button {
+      background-color: #8e24aa;
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .buy-button:hover {
+      background-color: #6a1b9a;
+    }
+
+    /* Fade-in animation on load */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product-container {
+  animation: fadeInUp 1s ease forwards;
+  transition: transform 0.3s ease;
+}
+
+/* Zoom effect on hover */
+.product-container:hover {
+  transform: scale(1.05);
+}
+
+/* Rotate image slightly on hover */
+.product-container img:hover {
+  transform: rotate(3deg) scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* BUY button glow effect */
+.buy-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.buy-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-20deg);
+  transition: left 0.5s ease;
+}
+
+.buy-button:hover::after {
+  left: 125%;
+}
+  
+  </style>
+</head>
+<body>
+
+  <h1 id="h13">FANCY JEWELLERIES</h1>
+
+  <div class="grid-container">
+    <div class="product-container">
+      <img src="https://infifashion.com/wp-content/uploads/2022/10/filigree-j-pin.png">
+      <div class="product-details">
+        <h3><strong>FILIGREE JEWEL</strong></h3>
+        <h3><strong>Rs.999</strong></h3><br>
+        <a href="paymentAsscr2.2.html" onclick="showForm()" class="buy-button">BUY</a>
+      </div>
+    </div>
+
+    <div class="product-container">
+      <img src="https://i.pinimg.com/originals/7b/d6/d1/7bd6d1b05e89b0966dc7ab618e2cc195.jpg">
+      <div class="product-details">
+    <h3><strong>FLORAL DECOR</strong></h3>
+        <h3><strong>Rs.1,200</strong></h3><br>
+        <a href="paymentAsscr2.2.html" onclick="showForm()" class="buy-button">BUY</a>
+      </div>
+    </div>
+
+    <div class="product-container">
+      <img src="https://a.1stdibscdn.com/marco-bicego-yellow-gold-gemstone-necklace-for-sale/j_4253/j_156991721652114381809/j_15699172_1652114382223_bg_processed.jpg">
+      <div class="product-details">
+    <h3><strong>GEM STONE NECKSET</strong></h3>
+        <h3><strong>Rs.2,000</strong></h3><br>
+        <a href="paymentAsscr2.2.html" onclick="showForm()" class="buy-button">BUY</a>
+      </div>
+    </div>
+
+    <div class="product-container">
+      <img src="https://i.pinimg.com/736x/c5/47/c1/c547c1a62282b0d1f1f410bb2fe040b7.jpg">
+      <div class="product-details">
+     <h3><strong>BLACK CHOKER</strong></h3>
+        <h3><strong>Rs.300</strong></h3><br>
+        <a href="paymentAsscr2.2.html" onclick="showForm()" class="buy-button">BUY</a>
+      </div>
+    </div>
+
+    <div class="product-container">
+      <img src="https://i.pinimg.com/736x/f0/88/d2/f088d2edff21657fcd1dd211562133c2.jpg">
+      <div class="product-details">
+         <h3><strong>RHINESTONE NECKLACE</strong></h3>
+        <h3><strong>Rs.400</strong></h3><br>
+        <a href="paymentAsscr2.2.html" onclick="showForm()" class="buy-button">BUY</a>
+      </div>
+    </div>
+
+    <div class="product-container">
+      <img src="http://www.thejewelleryeditor.com/media/images_thumbnails/filer_public_thumbnails/filer_public/dd/b3/ddb3172d-88a2-4d71-a502-6d81d3ed4f57/jahan-important-pear-cut-diamond-necklace.jpg__1536x0_q75_crop-scale_subsampling-2_upscale-false.jpg">
+      <div class="product-details">
+      <h3><strong>DRAPPED MARQUISE</strong></h3>
+        <h3><strong>Rs.1,250</strong></h3><br>
+        <a href="paymentAsscr2.2.html" onclick="showForm()" class="buy-button">BUY</a>
+      </div>
+    </div>  
+     </div>
+
+</body>
+</html>
+
