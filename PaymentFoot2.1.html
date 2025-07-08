@@ -7,19 +7,27 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #c5f197;
+      background-image: url('https://template.canva.com/EAGRaWmzfcg/1/0/1600w-ivsdeTP4Au0.jpg');
       margin: 0;
       padding: 20px;
+      animation: fadeInBody 2s ease-in;
     }
+   @keyframes fadeInBody {
+     0% { opacity: 0; }
+     100% { opacity: 1; }
+       }
 
     .payment-container {
-      background: #bef0f6;
+      background-color: rgb(225, 241, 167);
+      justify-content: center;
+      align-items: center;
       max-width: 500px;
       margin: 0 auto;
       padding: 30px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
+      opacity: 90%;
+}
 
     h2 {
       text-align: center;
@@ -79,20 +87,22 @@
 
   <div class="payment-container">
     <h2>Payment Form</h2>
-    <form action="ProjectFotwr.php" method="get">
+    <form action="ProjectFotwr2.1.php" method="get">
 
-      <div class="form-group">
-  <label>Select Product</label>
-  <select name="product" required>
-    <option value="">-- Choose Product --</option>
-    <option value="Casual Pink Sneaker">Casual Pink Sneaker</option>
-    <option value="Red Criss-Cross Wedges">Red Criss-Cross Wedges</option>
-    <option value="Beaded Black Ethnic Flats">Beaded Black Ethnic Flats</option>
-    <option value="GRoyal Golden Heels">GRoyal Golden Heels</option>
-  </select>
-</div>
+          <div class="form-group">
+        <label>Select Product</label>
+        <select name="product" required>
+          <option value="">-- Choose Product --</option>
+          <option value="WEDGE">WEDGE</option>
+          <option value="STRAPY">STRAPY</option>
+          <option value="GLADIATOR">GLADIATOR</option>
+          <option value="THONG">THONG</option>
+          <option value="PLATFORM">PLATFORM</option>
+          <option value="TOE-LOOP">TOE-LOOP</option>
+        </select>
+      </div>
 
-      <div class="form-group">
+      <div class="form-group">  
         <label>Select Size</label>
         <select name="size" required>
           <option value="">-- Choose Size --</option>
