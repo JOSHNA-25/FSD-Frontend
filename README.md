@@ -12,6 +12,3 @@ This project is a responsive E-Commerce frontend interface designed using HTML, 
  **HTML**– Semantic page structure (Headings, Images, Paragraph tag[<p> </p>], Anchor tags[<a> </a>], Buttons)
  **CSS** – Styling and responsive layout (width, height, color, background-color, etc..) 
  **JavaScript** – Basic interactivity and form triggers (Buy button, View Product interactions)
-
- ->_IMAGES:-_
- 
