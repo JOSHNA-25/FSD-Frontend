@@ -1,5 +1,3 @@
-![Screenshot 2025-07-09 121851](https://github.com/user-attachments/assets/2a3017a3-35c7-4d32-9437-386d8620f01e)
-![Screenshot 2025-07-09 121851](https://github.com/user-attachments/assets/9034f7d4-314a-4c8d-abdb-c74b502e59ff)
 Joshna-Boutique/
 ├── login.html    # login Page
     ├── register.html  # register Page
@@ -36,3 +34,8 @@ Joshna-Boutique/
         ├── Cosmts2.4.html     # Cosmetics Category4
             ├── PaymentCosmts2.4.html   # Payment - Cosmetics Category4
         ├── PaymentCosmts2.(5).html     # Cosmetics CategoryAll for Color
+![Screenshot 2025-07-09 121851](https://github.com/user-attachments/assets/2a3017a3-35c7-4d32-9437-386d8620f01e)
+![Screenshot 2025-07-09 121944](https://github.com/user-attachments/assets/6e164c59-5292-4ce4-9fe1-1f514e584430)
+![Screenshot 2025-07-09 122149](https://github.com/user-attachments/assets/2b1199fe-2bbf-4a2e-bdae-a4c59c6106ae)
+![Screenshot 2025-07-09 122042](https://github.com/user-attachments/assets/23465a45-2384-428a-8434-73d23df168dd)
+
